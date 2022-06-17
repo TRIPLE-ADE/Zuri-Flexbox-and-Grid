@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 5px;
+        padding: 0;
+    }
+    .container {
+        width: 500px;
+        margin: auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas:
+        'a a a b'
+        'c c d d'
+        'c c e e'
+         ;
+         
+        grid-gap: 2px;
+        background-color: white;
+    }
+    .container div{
+        text-align: center;
+        padding: 1.5em;
+        font-size: 30px;
+
+    }
+    .item1{
+        background-color:green;
+        grid-area: a;
+        height: 60px;
+    }
+    .item2{
+        background-color: yellow;
+        grid-area: b;
+    }
+    .item3{
+        background-color:#3e9271;
+        grid-area: c;
+       
+    }
+    .item4{
+        background-color:#e93241;
+        grid-area: d;
+    }
+    .item5{
+        background-color:  hsl(31, 77%, 52%);
+        grid-area: e;
+    }
+    a{
+            border: 1px solid white;
+            border-radius: 15px;
+            background-color:  hsl(31, 77%, 52%);
+            color: #ffffff;
+            padding: 7px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    @media(max-width:520px){
+        .container{
+            width: 300px;
+        }
+        .container div{
+        padding: 1em;
+        gap:1px;
+    }
+
+    .item1{
+        height: 40px;
+    }
+    }
+    </style>
+</head>
+<body>
+    <a href="index.html">Back</a>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>  
+        <div class="item4"></div>
+        <div class="item5"></div>
+    </div>
+</body>
+</html>
